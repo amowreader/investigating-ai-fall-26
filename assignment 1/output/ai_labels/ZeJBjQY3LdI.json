@@ -1,0 +1,17 @@
+{
+  "video_id": "ZeJBjQY3LdI",
+  "date": "2026-02-24",
+  "title": "\"Building an AI-Ready America: Teaching in the AI Age\"",
+  "model": "qwen3.5:4b",
+  "run_mode": "primary-gpu",
+  "contains_ai_llm": true,
+  "quote_count": 5,
+  "quotes": [
+    "AI is transforming schools across America.",
+    "70% of teachers admit they don't feel prepared to use the AI effectively in their classrooms.",
+    "discern if student work is AI generated or not",
+    "Artificial intelligence has unprecedented potential to aid teachers and enrich education.",
+    "where AI advancements are only going to increase in the months and years to come."
+  ],
+  "quote": "AI is transforming schools across America."
+}
