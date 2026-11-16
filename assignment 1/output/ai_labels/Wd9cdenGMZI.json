@@ -5,12 +5,13 @@
   "model": "qwen3.5:4b",
   "run_mode": "primary-gpu",
   "contains_ai_llm": true,
-  "quote_count": 4,
+  "quote_count": 5,
   "quotes": [
-    "Today's hearing will focus on AI and other advanced technologies which are improving efforts to keep America's workers safe and healthy.",
-    "Whether it is AI today or another groundbreaking technology that has emerged in the past",
-    "delegating ultimate responsibility for worker safety to AI",
-    "proven deployable AI technologies are already improving conditions for millions of frontline workers"
+    "\"Today's hearing will focus on AI and other advanced technologies\"",
+    "\"Whether it is AI today or another groundbreaking techno-\"",
+    "\"In the context of AI systems designed to protect workers on job sites\"",
+    "\"While the public conversation around artificial intelligence has focused largely on quality generative text\"",
+    "\"proven deployable AI technologies are already improving conditions for millions of frontline workers\""
   ],
-  "quote": "Today's hearing will focus on AI and other advanced technologies which are improving efforts to keep America's workers safe and healthy."
+  "quote": "\"Today's hearing will focus on AI and other advanced technologies\""
 }

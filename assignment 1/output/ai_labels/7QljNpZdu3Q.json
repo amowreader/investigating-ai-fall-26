@@ -5,9 +5,13 @@
   "model": "qwen3.5:4b",
   "run_mode": "primary-gpu",
   "contains_ai_llm": true,
-  "quote_count": 1,
+  "quote_count": 5,
   "quotes": [
-    "\"AI-powered tools are reshaping productivity, decision-making, and competitiveness in the global economy.\", \"artificial intelligence will be essential for years to come.\", \"seventh hearing our committee has held on artificial intelligence this Congress.\", \"AI-enabled discrimination in hiring.\", \"bold pro-worker AI agenda must help more workers join unions\""
+    "Across every major industry, AI-powered tools are reshaping productivity",
+    "While AI holds significant promise for increasing economic productivity",
+    "At the same time, some states and localities are moving ahead independently with their own AI regulations.",
+    "Some employers have even used AI-powered tools as a weapon to retaliate against workers",
+    "AI is also expanding opportunity, especially for people with disabilities"
   ],
-  "quote": "\"AI-powered tools are reshaping productivity, decision-making, and competitiveness in the global economy.\", \"artificial intelligence will be essential for years to come.\", \"seventh hearing our committee has held on artificial intelligence this Congress.\", \"AI-enabled discrimination in hiring.\", \"bold pro-worker AI agenda must help more workers join unions\""
+  "quote": "Across every major industry, AI-powered tools are reshaping productivity"
 }

@@ -5,12 +5,13 @@
   "model": "qwen3.5:4b",
   "run_mode": "primary-gpu",
   "contains_ai_llm": true,
-  "quote_count": 4,
+  "quote_count": 5,
   "quotes": [
-    "the rise of artificial intelligence, AI.",
-    "It can personalize instruction in ways that a single instructor teaching many students simply cannot do",
-    "ensure students are prepared to succeed in AIdriven world",
-    "Artificial intelligence is not simply another emerging technology."
+    "the rise of artificial intelligence, AI",
+    "It can identify students who are struggling before they fall behind.",
+    "Artificial intelligence is no longer theoretical.",
+    "The United States right now is a global leader in artificial intelligence,",
+    "First, I believe that we must treat AI literacy as a national workforce priority."
   ],
-  "quote": "the rise of artificial intelligence, AI."
+  "quote": "the rise of artificial intelligence, AI"
 }
