@@ -1,0 +1,49 @@
+﻿Codebook: Does this segment name antisemitism?
+
+
+Data: 30-second segments of auto-captioned House Education & Workforce Committee hearings. Captions have no punctuation or speaker labels and they contain errors: 
+
+
+Your task: For each segment, decide whether it contains a word or phrase that names antisemitism. This label tests for words, not meaning!
+
+
+Label: ANTISEMITISM TERM (Yes/No)
+
+
+Write exactly one of these in the human_label column: 
+
+
+Label YES if the segment contains at least one of these terms: 
+* antisemitism, antisemitic, anti-Semitism, anti-Semitic, anti-Semite(s)
+* anti-Jewish
+* Jew hatred / Jew-hatred. 
+* *Plural and possessive forms count and caption misspelling where the intended word is clear. It counts all uses regardless of who said the word and why.
+
+
+Label NO if the segment only mentions:
+* Jewish people or Judaism
+* Israel, Zionism
+* The Holocaust
+* Hate or discrimination in genearl, Title VI, or campus protests, without a word from the YES list. 
+* Semitic or Semitism without anti (ex. Semitic languages)
+* *Label NO if none of the YES terms appear even when the segment is about antisemitism 
+
+
+Label UNCLEAR if the caption is too garbled to tell whether a YES term is present. Add a note explaining why. 
+
+
+Edge cases
+* Judge only the text shown. If “anti-” ends one segment and “Semitism” begins the next label NO. 
+
+
+
+
+Examples 
+
+
+YES example                                                                                                                                                                                                                                                                                                  
+* 1675  “creating a hostile environment through their indifference to the harassment of Jewish students. We'll hear today about anti-semitism at three institutions, Haverford College, Depal University, and California Polytenic State University, San Louis Abyspo. The incidents we'll be discussing with our…”
+
+
+NO example (Jewish/Holocaust, no keyword)                                                                                                                                                                                                                                                                                                
+* 716   there and she wrote a letter to the committee I request unanimous consent to submit her full letter for the record without objection I encourage all the members to read it unfortunately I don't have time to read the whole thing but I want to give you a sample quote I'm a Jewish student the daugh…”

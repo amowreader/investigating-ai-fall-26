@@ -1,0 +1,79 @@
+Codebook: Does this segment name AI/LLMs?
+
+Data:
+30-second transcript segments from House Education & Workforce Committee hearings.
+Captions are auto-generated and may contain errors (missing punctuation, speaker switches, misspellings).
+
+Task:
+For each segment, decide whether the text contains a word or phrase that names AI/LLMs.
+This codebook is term-based first (presence/absence of terms), with an "UNCLEAR" option for garbled captions.
+
+Label:
+AI/LLM TERM (YES / NO / UNCLEAR)
+
+Write exactly one of these in the human_label column:
+- YES
+- NO
+- UNCLEAR
+
+Use the notes column only when:
+- you choose UNCLEAR, or
+- you want to flag a weird edge case.
+
+
+Label YES if the segment contains at least one AI/LLM term:
+- artificial intelligence
+- AI
+- AI-assisted
+- large language model
+- large language models
+- LLM
+- LLMs
+- GenAI
+- generative AI
+- generative artificial intelligence
+
+Counts as YES when:
+- plural/possessive forms appear (e.g., "LLMs", "AI's")
+- clear caption misspellings still obviously refer to the same term
+- the term is mentioned by any speaker for any reason (supportive, critical, neutral)
+
+
+Label NO if:
+- none of the YES terms appear in the segment text
+- the segment is about technology/education/jobs generally but does not name an AI/LLM term
+- "ai" appears as part of another word or sound that is clearly not AI (e.g., "aid", "said", "chair")
+
+
+Label UNCLEAR if:
+- the caption is too garbled to tell whether a YES term is present
+- audio-to-text errors make the intended word ambiguous
+
+If UNCLEAR, add a short note like:
+- "garbled around possible 'AI' token"
+- "could be 'LLM' but unreadable"
+
+
+Edge cases:
+- Judge only the text in the current segment row.
+- If a term is split across rows, do not infer across rows.
+- If "A" appears in one row and "I" appears in another, each row is NO unless a full term appears in that row.
+- For short token "AI", prefer NO when it is likely part of another word and not a standalone reference.
+
+
+Quick decision rule:
+1) Do I see one of the YES terms in this row?
+2) If yes -> YES
+3) If no -> NO
+4) If I cannot tell because the caption is corrupted -> UNCLEAR + note
+
+
+Examples:
+YES example:
+- "Artificial intelligence is reshaping classrooms and employers are asking for AI literacy."
+
+NO example (adjacent topic, no keyword):
+- "We need better digital skills training and stronger data privacy protections."
+
+UNCLEAR example:
+- "...we need a-i uh elm models..." (garbled; cannot confidently resolve term)
